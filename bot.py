@@ -8,9 +8,9 @@ bot = telebot.TeleBot("Token")
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.reply_to(message, "/sticker - рандомный стикер" \
-    "/pass - рандомный пароль" \
-    "/emodji - рандомный эмодзи" \
-    "/heh - hehehehehe")
+    " /pass - рандомный пароль" \
+    " /emodji - рандомный эмодзи" \
+    " /heh - hehehehehe")
     bot.send_sticker(message.chat.id, 'CAACAgUAAxkBAAEPfyBo4N__bIBHsTM7-YTLnVKs_5pUXAAChRYAAnst0VXYAr1wo3Br0zYE')
     
 @bot.message_handler(commands=['hello'])
